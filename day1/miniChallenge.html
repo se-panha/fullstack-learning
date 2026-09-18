@@ -12,38 +12,31 @@
     <label for="dob">Date of Birth:</label>
     <input type="date" id="dob" name="dob" /> <br /><br />
 
-    <label for="gender">Gender:</label>
-    <select id="gender" name="gender">
-      <br />
-      <option value="male">Male</option>
-      <br />
-      <option value="female">Female</option>
-    </select>
+    <label for="gender">Gender:</label><br>
+    <input type="radio" id="male" name="gender" value="male" />
+    <label for="male">Male</label> <br>
+    <input type="radio" id="female" name="gender" value="female" />
+    <label for="female">Female</label>
     <br />
     <br />
 
     <label for="programming">Programming Interest:</label> <br />
-    <input type="checkbox" id="programming" name="programming" value="frontend" />
+    <input type="checkbox" id="frontend" name="programming" value="frontend" />
     Frontend <br />
-    <input type="checkbox" id="programming" name="programming" value="backend" />
+    <input type="checkbox" id="backend" name="programming" value="backend" />
     Backend <br />
-    <input type="checkbox" id="programming" name="programming" value="database" />
+    <input type="checkbox" id="database" name="programming" value="database" />
     Database <br />
     <br /><br />
 
     <label for="level">Current Level:</label> <br />
     <select id="level" name="level">
-      <br />
       <option value="beginner" selected>Beginner</option>
-      <br />
       <option value="intermediate">Intermediate</option>
-      <br />
       <option value="advanced">Advanced</option>
-      <br />
     </select>
     <br /><br />
-    <label for="sendmessages">Send Messages:</label> <br />
-    <textarea name="sendmessages" id="sendmessages" placeholder="Enter your messages here..."></textarea>
+    <label for="sendmessages">Send Messages:</label> 
     <br />
     <button type="submit" name="sendmessages">Send Messages</button>
     <br /><br />
