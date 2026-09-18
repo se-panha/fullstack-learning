@@ -1,58 +1,53 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mini Challenge</title>
-  </head>
-  <body>
-    <form action="">
-      <label for="Date of Birth"><h1>Date of Birth:</h1></label>
-      <input type="date" id="dob" name="dob" style="width: 300px" />
-      <label for="Gender"><h2>Gender:</h2></label>
-      <input type="radio" id="male" name="gender" value="male" />
-      <label for="male">Male</label>
-      <input type="radio" id="female" name="gender" value="female" />
-      <label for="female">Female</label> <br />
-      <label for="programmingLanguage"><h2>Programming interests:</h2></label>
-      <input
-        type="checkbox"
-        id="fronend"
-        name="programmingLanguage"
-        value="fronend"
-      />
-      <label for="fronend">Fronend</label> <br />
-      <input
-        type="checkbox"
-        id="backend"
-        name="programmingLanguage"
-        value="backend"
-      />
-      <label for="backend">Backend</label> <br />
-      <input
-        type="checkbox"
-        id="database"
-        name="programmingLanguage"
-        value="database"
-      />
-      <label for="database">Database</label> <br />
-      <label for="currentLevel"><h2>Current Level:</h2></label>
-      <select id="currentLevel" name="currentLevel" style="width: 300px">
-        <option value="beginner">Beginner</option>
-        <option value="intermediate">Intermediate</option>
-        <option value="advanced">Advanced</option>
-      </select>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mini Challenge</title>
+</head>
+
+<body>
+  <form action="">
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob" /> <br /><br />
+
+    <label for="gender">Gender:</label>
+    <select id="gender" name="gender">
       <br />
+      <option value="male">Male</option>
       <br />
-      <button
-        type="submit"
-        style="width: 300px; height: 30px; background-color: blue; color: white"
-      >
-        Send Message
-      </button>
-    </form>
-    <footer>
-      <p>© 2026 Se Panha</p>
-    </footer>
-  </body>
+      <option value="female">Female</option>
+    </select>
+    <br />
+    <br />
+
+    <label for="programming">Programming Interest:</label> <br />
+    <input type="checkbox" id="programming" name="programming" value="frontend" />
+    Frontend <br />
+    <input type="checkbox" id="programming" name="programming" value="backend" />
+    Backend <br />
+    <input type="checkbox" id="programming" name="programming" value="database" />
+    Database <br />
+    <br /><br />
+
+    <label for="level">Current Level:</label> <br />
+    <select id="level" name="level">
+      <br />
+      <option value="beginner" selected>Beginner</option>
+      <br />
+      <option value="intermediate">Intermediate</option>
+      <br />
+      <option value="advanced">Advanced</option>
+      <br />
+    </select>
+    <br /><br />
+    <label for="sendmessages">Send Messages:</label> <br />
+    <textarea name="sendmessages" id="sendmessages" placeholder="Enter your messages here..."></textarea>
+    <br />
+    <button type="submit" name="sendmessages">Send Messages</button>
+    <br /><br />
+  </form>
+</body>
+
 </html>
