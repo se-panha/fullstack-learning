@@ -24,7 +24,7 @@
     <main>
       <form action="">
         <h2>Developer Workshop Registration</h2>
-        <article>
+        <section>
           <h3>Personal Information</h3>
           <label for="username">Full Name:</label>
           <input
@@ -45,25 +45,25 @@
           <label for="phone">Phone:</label>
           <input
             type="tel"
-            placeholder="phone"jg
+            placeholder="phone"
             name="phone"
             id="phone"
             required
           />
           <label for="dob">Date of Birth:</label>
-          <input type="date" name="dob" id="dob" required/>
-        </article>
+          <input type="date" name="dob" id="dob" required />
+        </section>
 
         <!-- experience level -->
-        <article>
+        <section>
           <h2>Experience Level:</h2>
-          <label for="">Experience Level</label>
-          <select required>
+          <label for="exp-level">Experience Level</label>
+          <select required id="exp-level">
             <option value="begginer" id="begginer">Begginer</option>
             <option value="intermedia" id="intermedia">Intermedia</option>
             <option value="advance" id="advance">Advance</option>
           </select>
-        </article>
+        </section>
 
         <!-- perferred track -->
         <fieldset>
@@ -76,18 +76,18 @@
           <label for="full-stack">Full Stack</label>
         </fieldset>
 
-          <!-- Technologies Interested  -->
+        <!-- Technologies Interested  -->
         <fieldset>
           <legend>Technologies Interested In:</legend>
-          
-            <input type="checkbox" id="htmlcss"/>
-            <label for="htmlcss">HTML/CSS</label>
-            <input type="checkbox" id="js" />
-            <label for="js" id="js">Javascript</label>
-            <input type="checkbox" id="phplaravel"/>
-            <label for="phplaravel" id="phplaravel">PHP/Laravel</label>
-            <input type="checkbox" id="react""/>
-            <label for="react">React</label>
+
+          <input type="checkbox" id="htmlcss" />
+          <label for="htmlcss">HTML/CSS</label>
+          <input type="checkbox" id="js" />
+          <label for="js">Javascript</label>
+          <input type="checkbox" id="phplaravel" />
+          <label for="phplaravel" id="phplaravel">PHP/Laravel</label>
+          <input type="checkbox" id="react" />
+          <label for="react">React</label>
         </fieldset>
 
         <!-- Registration -->
@@ -98,11 +98,11 @@
         </article>
 
         <!-- Workshop Schedule -->
-        <article>
-          <caption>
-            Workshop Schedule
-          </caption>
+        <section>
           <table>
+            <caption>
+              Workshop Schedule
+            </caption>
             <thead>
               <tr>
                 <th>Time</th>
@@ -126,20 +126,20 @@
                 <td>------</td>
               </tr>
               <tr>
-                <td><time datetime="01:00">13:00</time></td>
+                <td><time datetime="13:00">01:00</time></td>
                 <td>Backend Basics</td>
                 <td>---------</td>
                 <td>------</td>
               </tr>
               <tr>
-                <td><time datetime="14:30">14:30</time></td>
+                <td><time datetime="14:30">2:30</time></td>
                 <td>Full-Stack Demo</td>
                 <td>---------</td>
                 <td>------</td>
               </tr>
             </tbody>
           </table>
-        </article>
+        </section>
       </form>
 
       <!-- Registration Notes -->
