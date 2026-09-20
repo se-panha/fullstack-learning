@@ -45,13 +45,13 @@
           <label for="phone">Phone:</label>
           <input
             type="tel"
-            placeholder="phone"
+            placeholder="phone"jg
             name="phone"
             id="phone"
             required
           />
           <label for="dob">Date of Birth:</label>
-          <input type="date" name="dob" id="dob" />
+          <input type="date" name="dob" id="dob" required/>
         </article>
 
         <!-- experience level -->
@@ -74,19 +74,20 @@
           <label for="backend">Backend</label>
           <input type="radio" name="program" id="full-stack" required />
           <label for="full-stack">Full Stack</label>
+        </fieldset>
 
           <!-- Technologies Interested  -->
-          <h2>Technologies Interested In:</h2>
-          <article>
+        <fieldset>
+          <legend>Technologies Interested In:</legend>
+          
+            <input type="checkbox" id="htmlcss"/>
             <label for="htmlcss">HTML/CSS</label>
-            <input type="checkbox" name="htmlcss" />
-            <label for="js">Javascript</label>
-            <input type="checkbox" name="js" />
-            <label for="phplaravel">PHP/Laravel</label>
-            <input type="checkbox" name="phplaravel" />
+            <input type="checkbox" id="js" />
+            <label for="js" id="js">Javascript</label>
+            <input type="checkbox" id="phplaravel"/>
+            <label for="phplaravel" id="phplaravel">PHP/Laravel</label>
+            <input type="checkbox" id="react""/>
             <label for="react">React</label>
-            <input type="checkbox" name="react" />
-          </article>
         </fieldset>
 
         <!-- Registration -->
