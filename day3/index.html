@@ -1,140 +1,160 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML Forms | Tables & Accessibility</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- header -->
     <header>
-        <h1>FULL-STACK WORKSHOP 2026</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Registration</a></li>
-                <li><a href="#">Schedule</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
+      <h1>FULL-STACK WORKSHOP 2026</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Registration</a></li>
+          <li><a href="#">Schedule</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
     </header>
 
     <!-- main -->
     <main>
-        <form action="">
-            <h2>Developer Workshop Registration</h2>
-            <article>
-                <h3>Personal Information</h3>
-                <label for="username">Full Name:</label>
-                <input type="text" placeholder="full name" name="username" id="username">
-                <label for="email">Email:</label>
-                <input type="email" placeholder="email" name="email" id="email">
-                <label for="phone">Phone:</label>
-                <input type="number" placeholder="phone" name="phone" id="phone">
-                <label for="dob">Date of Birth:</label>
-                <input type="date" name="dob" id="dob">
-            </article>
+      <form action="">
+        <h2>Developer Workshop Registration</h2>
+        <article>
+          <h3>Personal Information</h3>
+          <label for="username">Full Name:</label>
+          <input
+            type="text"
+            placeholder="full name"
+            name="username"
+            id="username"
+            required
+          />
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            placeholder="email"
+            name="email"
+            id="email"
+            required
+          />
+          <label for="phone">Phone:</label>
+          <input
+            type="tel"
+            placeholder="phone"
+            name="phone"
+            id="phone"
+            required
+          />
+          <label for="dob">Date of Birth:</label>
+          <input type="date" name="dob" id="dob" />
+        </article>
 
-            <!-- experience level -->
-            <article>
-                <h2>Experience Level:</h2>
-                <label for="experienceLevel">Experience Level</label>
-                <select>
-                    <option value="begginer" id="begginer">Begginer</option>
-                    <option value="intermedia" id="intermedia">Intermedia</option>
-                    <option value="advance" id="advance">Advance</option>
-                </select>
-            </article>
+        <!-- experience level -->
+        <article>
+          <h2>Experience Level:</h2>
+          <label for="">Experience Level</label>
+          <select required>
+            <option value="begginer" id="begginer">Begginer</option>
+            <option value="intermedia" id="intermedia">Intermedia</option>
+            <option value="advance" id="advance">Advance</option>
+          </select>
+        </article>
 
-            <!-- perferred track -->
-            <fieldset>
-                <legend>Preferred Track:</legend>
+        <!-- perferred track -->
+        <fieldset>
+          <legend>Preferred Track:</legend>
+          <input type="radio" name="program" id="frontend" required />
+          <label for="frontend">Frontend</label>
+          <input type="radio" name="program" id="backend" required />
+          <label for="backend">Backend</label>
+          <input type="radio" name="program" id="full-stack" required />
+          <label for="full-stack">Full Stack</label>
 
-                <input type="radio" name="program" id="frontend">Frontend</input>
-                <input type="radio" name="program" id="backend">Backend</input>
-                <input type="radio" name="program" id="database">Database</input>
-    
-                <!-- Technologies Interested  -->
-                <h2>Technologies Interested In:</h2>
-                <article>
-                    <label for="htmlcss">HTML/CSS</label>
-                    <input type="checkbox" name="htmlcss">
-                    <label for="js">Javascript</label>
-                    <input type="checkbox" name="js">
-                    <label for="phplaravel">PHP/Laravel</label>
-                    <input type="checkbox" name="phplaravel">
-                    <label for="react" >React</label>
-                    <input type="checkbox" name="react">
-                </article>
-             </fieldset>
+          <!-- Technologies Interested  -->
+          <h2>Technologies Interested In:</h2>
+          <article>
+            <label for="htmlcss">HTML/CSS</label>
+            <input type="checkbox" name="htmlcss" />
+            <label for="js">Javascript</label>
+            <input type="checkbox" name="js" />
+            <label for="phplaravel">PHP/Laravel</label>
+            <input type="checkbox" name="phplaravel" />
+            <label for="react">React</label>
+            <input type="checkbox" name="react" />
+          </article>
+        </fieldset>
 
-            <!-- Registration -->
-            <article>
-                <h2>Why do you want to join?</h2>
-                <textarea name="registration" id="registration"></textarea>
-                <button>Submit Registration</button>
-            </article>
+        <!-- Registration -->
+        <article>
+          <h2>Why do you want to join?</h2>
+          <textarea name="registration" id="registration"></textarea>
+          <button>Submit Registration</button>
+        </article>
 
-            <!-- Workshop Schedule -->
-            <article>
-                <caption>Workshop Schedule</caption>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Time</th>
-                            <th>Topic</th>
-                            <th>Instructor</th>
-                            <th>Room</th>
-                        </tr>
-                    </thead>
+        <!-- Workshop Schedule -->
+        <article>
+          <caption>
+            Workshop Schedule
+          </caption>
+          <table>
+            <thead>
+              <tr>
+                <th>Time</th>
+                <th>Topic</th>
+                <th>Instructor</th>
+                <th>Room</th>
+              </tr>
+            </thead>
 
-                    <tbody>
-                        <tr>
-                            <td><time datetime="09:00">09:00</time></td>
-                            <td>HTML Foundations</td>
-                            <td>---------</td>
-                            <td>------</td>
-                        </tr>
-                        <tr>
-                            <td><time datetime="10:30">10:30</time></td>
-                            <td>JavaScript Basics</td>
-                            <td>---------</td>
-                            <td>------</td>
-                        </tr>
-                        <tr>
-                            <td><time datetime="01:00">13:00</time></td>
-                            <td>Backend Basics</td>
-                            <td>---------</td>
-                            <td>------</td>
-                        </tr>
-                        <tr>
-                            <td><time datetime="14:30">14:30</time></td>
-                            <td>Full-Stack Demo</td>
-                            <td>---------</td>
-                            <td>------</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </article>
-        </form>
+            <tbody>
+              <tr>
+                <td><time datetime="09:00">09:00</time></td>
+                <td>HTML Foundations</td>
+                <td>---------</td>
+                <td>------</td>
+              </tr>
+              <tr>
+                <td><time datetime="10:30">10:30</time></td>
+                <td>JavaScript Basics</td>
+                <td>---------</td>
+                <td>------</td>
+              </tr>
+              <tr>
+                <td><time datetime="01:00">13:00</time></td>
+                <td>Backend Basics</td>
+                <td>---------</td>
+                <td>------</td>
+              </tr>
+              <tr>
+                <td><time datetime="14:30">14:30</time></td>
+                <td>Full-Stack Demo</td>
+                <td>---------</td>
+                <td>------</td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+      </form>
 
-        <!-- Registration Notes -->
-        <aside>
-            <h2>Registration Notes</h2>
-            <ul>
-                <li>Bring your laptop</li>
-                <li>Arride before the first section</li>
-                <li>Complete your registration information</li>
-            </ul>
-        </aside>
+      <!-- Registration Notes -->
+      <aside>
+        <h2>Registration Notes</h2>
+        <ul>
+          <li>Bring your laptop</li>
+          <li>Arride before the first section</li>
+          <li>Complete your registration information</li>
+        </ul>
+      </aside>
 
-        <!-- footer-->
-        <footer>
-            <p>&copy; 2026 Full-Stack Workshop</p>
-        </footer>
+      <!-- footer-->
+      <footer>
+        <p>&copy; 2026 Full-Stack Workshop</p>
+      </footer>
     </main>
-</body>
-
+  </body>
 </html>
